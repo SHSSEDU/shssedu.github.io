@@ -2,7 +2,7 @@ console.clear();
 console.log('SHSSEDU');
 
 const config = {
-  src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/open-peeps-sheet.png',
+  src: 'https://gcore.jsdelivr.net/gh/SHSSEDU/Document@main/open-peeps-sheet.png',
   rows: 15,
   cols: 7 };
 
