@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="render" content="webkit">
+    <title>捐赠本站新姿态- SHSSEDU</title>
+    <!-- Favicon  -->
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://jsd.onmicrosoft.cn/gh/SHSSEDU/LOGO@main/LOGO-removebg.png">
+
+
+    <style type="text/css">
+        html {
+            font-size: 62.5%
+        }
+
+        body {
+            font-size: 1.4rem;
+            font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+            background-color: #fff;
+        }
+
+        html,
+        body {
+            height: 100%;
+            background-color: #f6f6f6;
+        }
+
+        .about {
+            padding-top: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .aboutbg {
+            max-width: 900px;
+            min-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            color: #6b6b6b;
+        }
+
+        a {
+            line-height: 30px;
+            color: #6b6b6b;
+            text-decoration: none;
+        }
+
+        p {
+            line-height: 30px;
+            color: #6b6b6b;
+        }
+
+        img {
+            width: 300px;
+        }
+
+        .hongbao {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .mess {
+            padding-top: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .message {
+            max-width: 900px;
+            min-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .footbox {
+            font-size: 1rem;
+            /**position: absolute;**/
+            bottom: 0;
+            padding: 0 0;
+            width: 100%;
+            color: #999;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="about">
+        <div class="aboutbg">
+            <h1>捐赠本站新姿态</h1>
+            <br>
+            <p style="text-align: center">最近支付宝可以每天扫红包，然后向商家付款。扫到的红包，你不用的话，可以直接捐赠给本站，不需要您花一分钱即可支持本站！<br>
+
+                每天花一分钟时间即可为本站捐助<br>
+
+                当然了，如果你扫到几元钱的大红包，你还是可以去购物买的哟！<br>
+
+                如果你是土豪，不在乎这点小钱捐赠，那么可以直接访问下面页面进行直接支付宝或者微信捐赠，<br>
+                <a href="https://sponsors.shssedu.ac.cn/"><b style="font-size: larger;">SHSSEDU捐赠页</b></a><br>
+
+                可以打开支付宝APP，首页搜索“<b style="color: red">707973495</b>”领红包！或者扫描下方二维码
+            </p>
+            <!-- <p style="text-align: center"><a href="/" target="_blank"><b style="color: red">五福活动又来了，点击这里扫福字</b></a></p> -->
+            <p class="hongbao"><img src="https://gcore.jsdelivr.net/gh/SHSSEDU/Document@main/redbao.jpg"></p>
+            <p style="text-align: center">再扫描下图二维码进行付款即可，上面扫到多少钱红包，就输入多少金额，红包会自动抵扣金额，所以不需要你支付钱</p>
+            <p class="hongbao"><img src="https://gcore.jsdelivr.net/gh/muzihuaner/huancdn/img/20210520145811.webp"></p>
+            <p style="text-align: center"><b style="color: red">每天都能领一次！</b></p>
+            <p style="text-align: center"><b style="color: red">每天都能领一次！</b></p>
+            <p style="text-align: center"><b style="color: red">每天都能领一次！</b></p>
+            <p style="text-align: center">至此付款就完成了，希喜欢本站的话请每天都来扫一扫哟！在其他地方扫描到的红包也可以付款给我哟</p>
+        </div>
+    </div>
+
+</body>
+<footer>
+    <div class="footbox">
+        <p>Copyright © <span id="timeyear"></span>
+            <a href="https://shssedu.ac.cn/" target="_blank"><b>SHSSEDU</b></a> All Rights Reserved.
+        </p>
+    </div>
+</footer>
+
+<script>
+    function getCurDate() {
+        var d = new Date();
+        var week;
+        switch (d.getDay()) {
+            case 1: week = "星期一"; break;
+            case 2: week = "星期二"; break;
+            case 3: week = "星期三"; break;
+            case 4: week = "星期四"; break;
+            case 5: week = "星期五"; break;
+            case 6: week = "星期六"; break;
+            default: week = "星期天";
+        }
+        var years = d.getFullYear();
+        var month = add_zero(d.getMonth() + 1);
+        var days = add_zero(d.getDate());
+        var hours = add_zero(d.getHours());
+        var minutes = add_zero(d.getMinutes());
+        var seconds = add_zero(d.getSeconds());
+        var ndate = years;
+        //var ndate = years+"年"+month+"月"+days+"日 "+hours+":"+minutes+":"+seconds+" "+week;
+        var divT = document.getElementById("timeyear");
+        divT.innerHTML = ndate;
+    }
+    function add_zero(temp) {
+        if (temp < 10) return "0" + temp;
+        else return temp;
+    }
+    setInterval("getCurDate()", 100);
+</script>
+
+
+</html>
