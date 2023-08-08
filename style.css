@@ -16,7 +16,7 @@ p{
   text-align: center;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
-ul {
+ ul {
   display: flex;
   list-style-type: none;
   padding: 0;
@@ -28,7 +28,7 @@ li {
 
 li:last-child {
   margin-right: 0;
-}
+} 
 ul>li>a{
   text-decoration: none;
   color: black;
@@ -43,4 +43,20 @@ ul>li>a{
 .link a{
   text-decoration: none;
   color: black;
+}
+@media (max-width: 600px) {
+  
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+  }
+  li{
+    margin-top: 20px;
+  }
+  ul li a{
+    width: 100px!important;
+  }
+  
 }
