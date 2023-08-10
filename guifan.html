@@ -16,18 +16,52 @@
     <script src="https://cdnjs.loli.net/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://jsd.onmicrosoft.cn/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://jsd.onmicrosoft.cn/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
     <!-- <div class="mx-auto max-w-2xl text-center">
         <h2 class="text-center">社区规范-SHSSEDU</h2>
-    </div>
-    <div id="PdfViewPanel" style="margin: 5px;">
+    </div> -->
+    <!-- <div id="PdfViewPanel" style="margin: 5px;">
         <iframe
             src="https://srs.comein.cn/static/web/viewer.html?file="
             width="100%" height="800px;"></iframe>
     </div> -->
+    <div class="paper">
+        <div id="markdown-container"></div>
+    </div>
+    <script>
+        function loadMarkdownFile(file) {
+            fetch(file)
+                .then(function (response) {
+                    return response.text();
+                })
+                .then(function (markdownText) {
+                    var html = marked.parse(markdownText);
+                    document.getElementById("markdown-container").innerHTML = html;
+                })
+                .catch(function (error) {
+                    console.log("Error loading Markdown file: " + error);
+                });
+        }
 
+        // 调用函数并传入 Markdown 文件的路径
+        loadMarkdownFile("https://ghproxy.com/https://raw.githubusercontent.com/SHSSEDU/SHSSEDU/main/%E7%A4%BE%E5%8C%BA%E8%A7%84%E8%8C%83.md");
+    </script>
+    <style>
+        .paper {
+            background-color: #f9f6f2;
+            border: 1px solid #e6e1dc;
+            padding: 20px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            width: 90%;
+            margin: 0 auto;
+          }
+        
+    </style>
 </body>
 
 </html>
