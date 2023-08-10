@@ -412,7 +412,9 @@
       <div class="hestia-bottom-footer-content">
         <div class="row">
           <div class="col-12 col-md text-center">
-            <a style="color: aliceblue;" href="mailto:admin@shssedu.ac.cn">E-mail:admin@shssedu.ac.cn</a><br>
+            <a href="https://www.12377.cn/"><img src="https://www.12377.cn/style/logo.png" alt="" height="20x"></a><br><br>
+            <a style="color: aliceblue;" href="guifan.html">《SHSSEDU社区规范》</a><br>
+            <a style="color: aliceblue;" href="mailto:admin@shssedu.ac.cn">admin@shssedu.ac.cn</a><br>
             <a style="color: aliceblue;" href="https://icp.gov.moe/?keyword=20230632"
               target="_blank">萌ICP备20230632号</a><br>
             <p class="d-block my-3">Copyright &copy;
@@ -429,6 +431,34 @@
     </div>
   </footer>
 
+  <!-- 弹窗 -->
+  <!-- 模态框结构 -->
+<div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="termsModalLabel">使用SHSSEDU社区前必读</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- 使用条款内容 -->
+        <p>在使用SHSSEDU网站以及相关服务（以下简称SHSSEDU）前，请您务必仔细阅读并透彻理解本规范。您可以选择不使用SHSSEDU，但如果您使用SHSSEDU，您的使用行为将被视为对本规范（《SHSSEDU社区规范》）全部内容的认可。</p>
+        <a href="guifan.html">《SHSSEDU社区规范》</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">同意</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function() {
+    // 显示模态框
+    $('#termsModal').modal('show');
+  });
+</script>
   <!-- 返回TOP -->
   <!-- 返回顶部按钮 -->
   <button class="btn scroll-to-top" onclick="scrollToTop()" style="background-color: #999;color:aliceblue;">
